@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kaN-Yo-vko">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Single View Controller-->
+        <scene sceneID="77z-Dg-Bm3">
+            <objects>
+                <viewController id="mjA-NC-4Wr" customClass="SingleViewController" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MZH-To-2fg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ly1-97-CaS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zau-gd-IKu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sr1-SR-6cy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-hW-82t">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8U-bK-BeH">
+                                <rect key="frame" x="132" y="129" width="195" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="label" destination="D8U-bK-BeH" id="l0d-KX-4Zs"/>
+                        <segue destination="kaN-Yo-vko" kind="presentation" identifier="toMenu" id="eCA-wk-saj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EdN-L6-tOb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-496"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h0i-01-o1o">
+            <objects>
+                <viewController id="kaN-Yo-vko" customClass="ViewController" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i6U-qH-slm"/>
+                        <viewControllerLayoutGuide type="bottom" id="hde-UB-drn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fSy-AM-0UA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="vQY-oT-ozM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="7YD-KA-EQd">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktm-gn-lSP">
+                                <rect key="frame" x="107" y="447" width="200" height="200"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="multi.png"/>
+                                <connections>
+                                    <segue destination="oMo-KQ-w9v" kind="presentation" identifier="toView2" id="Vht-CN-vKP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="57Y-5d-H5M">
+                                <rect key="frame" x="107" y="184" width="200" height="200"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="single.png"/>
+                                <connections>
+                                    <segue destination="mjA-NC-4Wr" kind="presentation" identifier="toSingle" id="OGG-fY-8DJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUm-FB-CYD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="347"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="CfI-xr-YOS">
+            <objects>
+                <viewController id="oMo-KQ-w9v" customClass="ViewController2" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="77P-Hl-oKc"/>
+                        <viewControllerLayoutGuide type="bottom" id="SX9-ON-eX6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dt3-RX-pjh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="hp6-Rv-Cmr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzt-Ya-1Z5">
+                                <rect key="frame" x="87" y="577" width="240" height="80"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="modoru.png"/>
+                                <connections>
+                                    <segue destination="kaN-Yo-vko" kind="presentation" id="lHa-is-Gte"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-gS-pX5">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkD-eY-NOw">
+                                <rect key="frame" x="87" y="438" width="240" height="80"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="kettei1.png"/>
+                                <connections>
+                                    <action selector="next" destination="oMo-KQ-w9v" eventType="touchUpInside" id="7cS-zt-QeI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="zk2-Eb-bne" kind="presentation" identifier="toView3" id="OG0-Jp-d1R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NhW-EW-iBZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="346"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="B5V-H4-6xE">
+            <objects>
+                <viewController id="zk2-Eb-bne" customClass="ViewController3" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6bN-3n-SNd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aq9-kd-ahY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XbC-rE-OBc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="nfh-pe-pQd">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="Evf-sZ-5Oe">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnT-TI-Wyf">
+                                <rect key="frame" x="87" y="524" width="240" height="80"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="kettei2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XC-Vi-3w1">
+                                <rect key="frame" x="87" y="524" width="240" height="80"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="kettei1.png"/>
+                                <connections>
+                                    <segue destination="EU1-Vu-IFY" kind="presentation" identifier="toView4" id="ueS-aI-dPv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="My5-Zv-8HO">
+                                <rect key="frame" x="91" y="165" width="232" height="44"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="countLabel" destination="My5-Zv-8HO" id="6q5-HK-R0R"/>
+                        <outlet property="ketteiButton" destination="5XC-Vi-3w1" id="zYl-oy-yOW"/>
+                        <outlet property="ketteiButton2" destination="NnT-TI-Wyf" id="KsS-Vj-Ogz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23b-kx-QOi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="347"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="EdN-IZ-iAG">
+            <objects>
+                <viewController id="EU1-Vu-IFY" customClass="ViewController4" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7fM-52-1pM"/>
+                        <viewControllerLayoutGuide type="bottom" id="OoQ-Yl-rje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HZr-fA-3Kn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="S0e-xP-zIe">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leh-qK-B3A">
+                                <rect key="frame" x="87" y="622" width="240" height="80"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="start.png"/>
+                                <connections>
+                                    <segue destination="R05-s2-6Cd" kind="presentation" identifier="toView5" id="iRs-Dm-r3F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYc-YL-nwE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="347"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="ShU-T5-Kb2">
+            <objects>
+                <viewController id="R05-s2-6Cd" customClass="ViewController5" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kJc-aa-6Rg"/>
+                        <viewControllerLayoutGuide type="bottom" id="yfd-aZ-nhF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PDQ-Zx-VtK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="sVz-6g-kr1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="Keo-jB-vyY">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfe-Sd-n6Z">
+                                <rect key="frame" x="110" y="149" width="195" height="27"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RlM-p7-g6P">
+                                <rect key="frame" x="40" y="107" width="198" height="27"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="label" destination="hfe-Sd-n6Z" id="bwb-hv-4xt"/>
+                        <outlet property="playerLabel" destination="RlM-p7-g6P" id="xk4-qC-23O"/>
+                        <segue destination="ysv-S7-nu2" kind="presentation" identifier="toResultView" id="BHl-k7-VfP"/>
+                        <segue destination="HkB-kw-ZpQ" kind="presentation" identifier="toResultView2" id="KZP-NY-Yty"/>
+                        <segue destination="EU1-Vu-IFY" kind="presentation" identifier="toRetry" id="FWa-p0-b0W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Aq-h4-wyI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="347"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="ToI-c6-de9">
+            <objects>
+                <viewController id="ysv-S7-nu2" customClass="ResultViewController" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vOn-Rr-Orq"/>
+                        <viewControllerLayoutGuide type="bottom" id="GXu-6E-Qoz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gKP-Kd-xJw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="naga.png" translatesAutoresizingMaskIntoConstraints="NO" id="TQy-TK-nFx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="lYf-lX-ebO">
+                                <rect key="frame" x="87" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoS-H3-vG3">
+                                <rect key="frame" x="87" y="363" width="240" height="80"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="next.png"/>
+                                <connections>
+                                    <segue destination="zk2-Eb-bne" kind="presentation" identifier="toNext" id="kxd-fP-MAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSX-Tg-OoD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="347"/>
+        </scene>
+        <!--Result View Controller2-->
+        <scene sceneID="h6m-DH-V9j">
+            <objects>
+                <viewController id="HkB-kw-ZpQ" customClass="ResultViewController2" customModule="Nagatan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ggm-w8-gIa"/>
+                        <viewControllerLayoutGuide type="bottom" id="NaE-9X-U2Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="et0-EK-NPG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="resultback2.png" translatesAutoresizingMaskIntoConstraints="NO" id="pCs-Ge-9g6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnq-dH-7eX">
+                                <rect key="frame" x="26" y="27" width="63" height="63"/>
+                                <animations/>
+                                <state key="normal" image="TwitterLogo_#55acee.png"/>
+                                <connections>
+                                    <action selector="postTwitter:" destination="HkB-kw-ZpQ" eventType="touchUpInside" id="rjr-Jg-aAW"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crown1.png" translatesAutoresizingMaskIntoConstraints="NO" id="RyG-Lg-ShN">
+                                <rect key="frame" x="-2" y="145" width="67" height="54"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wfw-sV-k9m">
+                                <rect key="frame" x="107" y="4" width="201" height="107"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SC9-4f-ON2">
+                                <rect key="frame" x="60" y="265" width="340" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wu-6R-Fdu">
+                                <rect key="frame" x="60" y="368" width="340" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vql-mP-yem">
+                                <rect key="frame" x="60" y="475" width="340" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BM-mb-JEd">
+                                <rect key="frame" x="60" y="576" width="340" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xFa-Pc-trp">
+                                <rect key="frame" x="60" y="161" width="340" height="28"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRi-wA-avY">
+                                <rect key="frame" x="130" y="660" width="155" height="51"/>
+                                <animations/>
+                                <state key="normal" title="Button" image="modoruW.png"/>
+                                <connections>
+                                    <segue destination="kaN-Yo-vko" kind="presentation" id="BRN-15-I5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6I-yh-GzI">
+                                <rect key="frame" x="341" y="33" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="FB-f-Logo__blue_100.png"/>
+                                <connections>
+                                    <action selector="postFacebook:" destination="HkB-kw-ZpQ" eventType="touchUpInside" id="YUo-sk-H3b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="label1" destination="xFa-Pc-trp" id="Cvx-JD-ANU"/>
+                        <outlet property="label2" destination="SC9-4f-ON2" id="Udy-zc-go2"/>
+                        <outlet property="label3" destination="8Wu-6R-Fdu" id="teR-gg-K4l"/>
+                        <outlet property="label4" destination="Vql-mP-yem" id="yT7-5w-xuG"/>
+                        <outlet property="label5" destination="9BM-mb-JEd" id="TJh-bC-y5k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXh-g4-MOt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1969" y="1213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FB-f-Logo__blue_100.png" width="100" height="100"/>
+        <image name="TwitterLogo_#55acee.png" width="1687" height="1687"/>
+        <image name="crown1.png" width="905" height="793"/>
+        <image name="kettei1.png" width="2668" height="814"/>
+        <image name="kettei2.png" width="2668" height="814"/>
+        <image name="modoru.png" width="2641" height="788"/>
+        <image name="modoruW.png" width="2668" height="814"/>
+        <image name="multi.png" width="563" height="567"/>
+        <image name="naga.png" width="4700" height="8350"/>
+        <image name="next.png" width="2668" height="814"/>
+        <image name="resultback2.png" width="4688" height="8337"/>
+        <image name="single.png" width="563" height="567"/>
+        <image name="start.png" width="2668" height="814"/>
+        <image name="title.png" width="3104" height="564"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="BRN-15-I5k"/>
+        <segue reference="FWa-p0-b0W"/>
+        <segue reference="OG0-Jp-d1R"/>
+    </inferredMetricsTieBreakers>
+</document>
